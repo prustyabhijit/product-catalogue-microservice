@@ -26,8 +26,8 @@ Then running the products service
 
 `http://localhost:2222/products/Laptops`
 
-`Response Sample
-{
+Response Sample
+`{
   "id": 2,
   "name": "Lenovo",
   "type": "Laptops",
@@ -55,8 +55,8 @@ Then running the products service
 
 `http://localhost:2222/products/create`
 
-`Request Payload
-{
+Request Payload
+`{
 "name": "Treadmill",
 "type": "Sports",
 "Price":75645.52
@@ -111,13 +111,13 @@ Response
 }`
 
 ##Delete Product
-{
+
 `http://localhost:2222/products/delete/{productId}`
 
 `http://localhost:2222/products/delete/5`
 
-`Response
-[
+Response
+`[
   {
     "id": 0,
     "name": "Treadmill",
