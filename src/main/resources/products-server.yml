@@ -1,0 +1,15 @@
+# Spring properties
+spring:
+  application:
+     name: products-service  # Service registers under this name
+
+error:
+  path: /error
+
+# HTTP Server
+server:
+  port: 2222   # HTTP (Tomcat) port
+   
+
+
+
