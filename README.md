@@ -22,21 +22,25 @@ Then running the products service
 
 ##search product by type
 
-http://localhost:2222/products/{productType}
-http://localhost:2222/products/Laptops
+`http://localhost:2222/products/{productType}`
 
-Response Sample
+`http://localhost:2222/products/Laptops`
+
+`Response Sample
 {
   "id": 2,
   "name": "Lenovo",
   "type": "Laptops",
   "price": 33862.1
-}
+}`
+
 ##Search price by product name
 
-http://localhost:2222/products/price/{productName}
-http://localhost:2222/products/price/Lenovo
-Response
+`http://localhost:2222/products/price/{productName}`
+
+`http://localhost:2222/products/price/Lenovo`
+
+`Response
 [
   {
     "id": 2,
@@ -44,21 +48,22 @@ Response
     "type": "Laptops",
     "price": 33862.1
   }
-]
+]`
 
 ##Create Product
-{
-http://localhost:2222/products/create
 
-Request Payload
+
+`http://localhost:2222/products/create`
+
+`Request Payload
 {
 "name": "Treadmill",
 "type": "Sports",
 "Price":75645.52
-}
+}`
 
 Response 
-{
+`{
 [
   {
     "id": 0,
@@ -103,13 +108,15 @@ Response
     "price": 96724.62
   }
 ]
-}
+}`
 
 ##Delete Product
 {
-http://localhost:2222/products/delete/{productId}
-http://localhost:2222/products/delete/5
-Response
+`http://localhost:2222/products/delete/{productId}`
+
+`http://localhost:2222/products/delete/5`
+
+`Response
 [
   {
     "id": 0,
@@ -147,5 +154,5 @@ Response
     "type": "Software",
     "price": 96724.62
   }
-]
+]`
 
